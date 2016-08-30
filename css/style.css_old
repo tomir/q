@@ -1,0 +1,766 @@
+@font-face {
+    font-family: 'cookieregular';
+    src: url('font/cookie-regular_0-webfont.eot');
+    src: url('font/cookie-regular_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/cookie-regular_0-webfont.woff') format('woff'),
+         url('font/cookie-regular_0-webfont.ttf') format('truetype'),
+         url('font/cookie-regular_0-webfont.svg#cookieregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background-image: url('../img/background.png');
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar-up {
+	 background-image: url('../img/up.png');
+	 background-position:bottom;
+	 height:100px;
+	 font-family: 'Open Sans', sans-serif;
+	 font-weight:400;
+	 text-transform:uppercase;
+	 font-size:12px;
+}
+
+.titletext {
+	font-family: 'cookieregular';
+	font-size:65px;
+}
+
+.titletextbig {
+	font-family: 'cookieregular';
+	font-size:125px;
+}
+
+.logo {
+	max-width:140px;
+	max-height:80px;
+}
+
+.navbar-brand {
+	float: left;
+	padding: 8px 15px;
+	font-size: 18px;
+	line-height: 20px;
+	width:100%;
+	max-width:200px;
+	height:100%;
+	max-height:80px;
+}
+
+#top-navbar .nav {
+	margin-top: 28px;
+	margin-bottom: 0px;
+}
+
+.bgwhite {
+	background-image: url('../img/back-white-95.png');
+}
+
+.container-up {
+	margin-top: -20px;
+}
+
+.container-center {
+	/*padding-right: 0px!important;
+	padding-left: 0px!important;*/
+}
+
+.bluebox {
+	background:#0b5787;
+	position:relative;
+	color:#fff;
+	margin-left:auto;
+	margin-right:auto;
+	min-height:50px;
+}
+
+.showfolder {
+	border:2px solid #fff;
+	width:60px;
+	padding:5px;
+	margin:5px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	text-transform:uppercase;
+	font-size:12px;
+	color:#fff;
+}
+
+.showfolder:hover {
+	transform: scale(1.05);
+}
+
+.showquiz {
+	float:left;
+	border:2px solid #fff;
+	width:72px;
+	padding:5px;
+	margin:5px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	text-transform:uppercase;
+	font-size:24px;
+	color:#fff;
+}
+
+.showquiz:hover {
+	transform: scale(1.05);
+}
+
+.testquiz {
+	float:left;
+	min-width:150px;
+	display:block;
+	color:#fdecbd;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:18px;
+	padding-top:4px;
+	padding-left:6px;
+}
+
+.img-responsive.img-center {
+	display: table;
+    margin: 0 auto;
+}
+
+.icon-center {
+	display: table;
+	margin: 0 auto;
+}
+
+.konkurs {
+	transition: all 0.3s ease;
+	position:absolute;
+	right:30px;
+	top:40px;
+	width:90%;
+	max-width:313px;
+	z-index:10000;
+}
+
+.konkurs:hover {
+	transform: scale(1.05);
+}
+
+.button-orange {
+	background:#f77e4d;
+	color:#fff;
+	padding:10px;
+	text-transform:uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	transition: all 0.3s ease;
+}
+
+.button-orange:hover {
+	transform: scale(1.05);
+}
+
+.button-vote:before {
+	content: "zagłosuj";
+}
+
+.button-vote {
+	margin-top:30px;
+	background:#f77e4d;
+	color:#fff;
+	padding:10px;
+	text-transform:uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+	transition: all 0.3s ease;
+	text-align:center;
+	font-size:20px;
+	width:100%;
+}
+
+.button-vote:hover {
+	transform: scale(1.05);
+}
+
+.pkonkursowy {
+
+
+}
+
+
+.pkonkursowy .author {
+	color:#ff825e;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+	font-size:16px;
+	/*min-height: 60px;*/
+}
+
+.pkonkursowy .title {
+	color:#636363;	
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+	font-size:20px;
+	margin-top:10px;
+}
+
+.pkonkursowy .icons {
+	color:#636363;	
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:13px;
+	margin-top:3px;
+	vertical-align:middle;
+	margin-bottom:10px;
+}
+
+.pkonkursowy .icons span.time {
+	background: url("../img/time.png");
+	background-repeat: no-repeat;
+	padding-left:24px;
+	vertical-align:middle;
+}
+
+.pkonkursowy .icons span.portion {
+	background: url("../img/portion.png");
+	background-repeat: no-repeat;
+	margin-left:10px;
+	padding-left:24px;
+	vertical-align:middle;
+}
+
+.pkonkursowy .text {
+	color:#ff825e;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:600;
+	font-size:14px;
+}
+
+.pkonkursowy .show:before {
+	content:"Zobacz przepis";
+}
+
+.pkonkursowy .show {
+	background:#b7b7b7;
+	margin-top:4px;
+	color:#fff;
+	padding:5px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+	width:40%;
+	font-size:14px;
+	text-align:center;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+}
+
+.pkonkursowy .show:hover {
+	transform: scale(1.05);
+}
+
+/*  OZNACZENIA POSIŁKÓW  */
+.sniadanie {
+	top:20px;
+	left:-10px;
+	background:#46a683;
+	padding:5px;
+	padding-right:20px;
+	padding-left:20px;
+	position:absolute;
+	color:#fff;
+	text-transform:uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+	font-size:18px;
+}
+
+.sniadanie:before {
+	content: "śniadanie";
+}
+
+.sniadanie .triangle {
+	position:absolute;
+	left:0;
+	top:0;
+	border-left: 25px solid transparent;
+	border-right: 0px solid transparent;
+	border-top: 30px solid #227f49;
+	height: 0; 
+	margin-right:0px;
+	margin-top:35px;
+	width: 0; 
+}
+
+.obiad {
+	top:20px;
+	left:-10px;
+	background:#ed855b;
+	padding:5px;
+	padding-right:20px;
+	padding-left:20px;
+	position:absolute;
+	color:#fff;
+	text-transform:uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+	font-size:18px;
+}
+
+.obiad:before {
+	content: "obiad";
+}
+
+.obiad .triangle {
+	position:absolute;
+	left:0;
+	top:0;
+	border-left: 25px solid transparent;
+	border-right: 0px solid transparent;
+	border-top: 30px solid #c35e34;
+	height: 0; 
+	margin-right:0px;
+	margin-top:35px;
+	width: 0; 
+}
+
+.deser {
+	top:20px;
+	left:-10px;
+	background:#4685c5;
+	padding:5px;
+	padding-right:20px;
+	padding-left:20px;
+	position:absolute;
+	color:#fff;
+	text-transform:uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+	font-size:18px;
+}
+
+.deser:before {
+	content: "deser";
+}
+
+.deser .triangle {
+	position:absolute;
+	left:0;
+	top:0;
+	border-left: 25px solid transparent;
+	border-right: 0px solid transparent;
+	border-top: 30px solid #2c659f;
+	height: 0; 
+	margin-right:0px;
+	margin-top:35px;
+	width: 0; 
+}
+
+.przekaska {
+	top:20px;
+	left:-10px;
+	background:#e59b31;
+	padding:5px;
+	padding-right:20px;
+	padding-left:20px;
+	position:absolute;
+	color:#fff;
+	text-transform:uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+	font-size:18px;
+}
+
+.przekaska:before {
+	content: "przekąska/sałatka";
+}
+
+.przekaska .triangle {
+	position:absolute;
+	left:0;
+	top:0;
+	border-left: 25px solid transparent;
+	border-right: 0px solid transparent;
+	border-top: 30px solid #c58529;
+	height: 0; 
+	margin-right:0px;
+	margin-top:35px;
+	width: 0; 
+}
+
+/* DO PRZEPISU */
+
+.skladniki {
+	top:20px;
+	left:-20px;
+	background:#4685c5;
+	padding:5px;
+	padding-right:20px;
+	padding-left:20px;
+	position:relative;
+	color:#fff;
+	text-transform:uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+	font-size:18px;
+	margin-bottom:30px;
+	width: calc(100% + 20px);
+}
+
+.skladniki:before {
+	content: "składniki";
+}
+
+.skladniki .triangle {
+	position:absolute;
+	left:0;
+	top:0;
+	border-left: 25px solid transparent;
+	border-right: 0px solid transparent;
+	border-top: 30px solid #2c659f;
+	height: 0; 
+	margin-right:0px;
+	margin-top:35px;
+	width: 0; 
+}
+
+.skladnikiprzepis {
+	padding-left:0px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:14px;
+}
+
+.titleprzepis-deser {
+	background:#5591d4;
+	color:#fff;
+	padding:10px;
+	font-size:20px;
+	display: inline;
+	font-family: 'Open Sans', sans-serif;
+	font-size:22px;
+	line-height:40px;
+}
+
+.titleprzepis-obiad {
+	background:#ed855b;
+	color:#fff;
+	padding:10px;
+	font-size:20px;
+	display: inline;
+	font-family: 'Open Sans', sans-serif;
+	font-size:22px;
+	line-height:40px;
+}
+
+.titleprzepis-przekaska {
+	background:#e59b31;
+	color:#fff;
+	padding:10px;
+	font-size:20px;
+	display: inline;
+	font-family: 'Open Sans', sans-serif;
+	font-size:22px;
+	line-height:40px;
+}
+
+.titleprzepis-sniadanie {
+	background:#46a683;
+	color:#fff;
+	padding:10px;
+	font-size:20px;
+	display: inline;
+	font-family: 'Open Sans', sans-serif;
+	font-size:22px;
+	line-height:40px;
+}
+
+.titleskladniki {
+	text-decoration: underline;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:20px;
+	margin-bottom:0px;
+	display:block;
+}
+
+.titleprzygotowanie {
+	text-decoration: underline;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	margin-top:15px;
+	font-size:15px;
+	display:block;
+}
+
+.titleautor {
+	text-decoration: underline;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	padding-top:10px;
+	font-size:14px;
+	display:block;
+}
+
+strong.author {
+	padding-left:0px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:14px;
+}
+
+.textprzepis {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	font-size:14px;
+	line-height: 25px
+}
+
+
+.folder {
+	transition: all 0.3s ease;
+	position:absolute;
+	left:20px;
+	bottom:-10px;
+	max-width:118px;
+}
+
+.folder:hover {
+	transform: scale(1.05);
+}
+
+.lefttitle {
+	margin-left:-54px;
+	background:#ed855b;
+	padding:5px;
+	padding-left:60px;
+	position:relative;
+	color:#fff;
+	text-transform:uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+	font-size:18px;
+}
+
+.lefttitle .triangle {
+	position:absolute;
+	left:0;
+	top:0;
+	border-left: 25px solid transparent;
+	border-right: 0px solid transparent;
+	border-top: 30px solid #c35e34;
+	height: 0; 
+	margin-right:5px;
+	margin-top:35px;
+	width: 0; 
+}
+
+.links {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	text-transform:uppercase;
+	font-size:12px;
+	color:#fff;
+	margin-top:6px;
+	margin-bottom:10px;
+}
+
+.fline {
+	color:#fff;
+	border-bottom:1px solid #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	text-transform:uppercase;
+	font-size:14px;
+	display:block;
+}
+
+.footer {
+	margin-top:-25px;
+	background-image: url('../img/down.png');
+	padding-top:30px;
+	/*padding-bottom:36px;*/
+}
+
+.footer ul.nav li a{
+	color:#fff;
+}
+
+.footer .nav > li > a:hover, .footer .nav > li > a:focus {
+	text-decoration: none;
+	background-color: #000;
+	color:#fff;
+}
+
+.footer .nav > li > a {
+	position: relative;
+	display: block;
+	padding: 5px 15px;
+}
+
+.lr0{
+	padding-left:0px;
+	padding-right:0px;
+	margin-left:0px;
+	margin-right:0px;
+}
+
+.lr15 {
+	margin-left:15px;
+	margin-right:15px;
+}
+
+.pt10 {
+	padding-top:10px;
+}
+
+.pb10 {
+	padding-bottom:10px;
+}
+
+.pt30 {
+	padding-top:30px;
+}
+
+.pt50 {
+	padding-top:50px;
+}
+
+.pb30 {
+	padding-bottom:30px;
+}
+
+.pb50 {
+	padding-bottom:50px;
+}
+
+.pb90 {
+	padding-bottom:90px;
+}
+
+.przepis {
+	position:relative;
+}
+
+.przepis img {
+	position:relative;
+}
+
+.przepis .info {
+	float:left;
+	width:100%;
+	/*max-width:210px;*/
+	text-align:left;
+	margin-left: auto;
+	margin-right: auto;
+	/*left: 50%;
+	margin-left: -105px;*/
+	position:absolute;
+	background:#da825e;
+	color:#fff;
+	padding:5px;
+	bottom:0px;
+	opacity: 0.9;
+	display:block;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+	text-transform:uppercase;
+	font-size:12px;
+}
+
+.osoba {
+	padding:0px;
+	margin-bottom:30px;
+}
+
+.osoba .info {
+	position:absolute;
+	bottom:-10px;
+	background:#035786;
+	color:#fff;
+	padding:5px;
+	padding-left:7px;
+	width:100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.person {
+	max-width:250px;
+	padding-bottom:20px;
+}	
+
+@media (max-width: 480px) {
+	.icon-center {
+		width:40px;
+	}
+}
+
+@media (max-width: 767px) {
+	.links, .fline {
+		text-align: center;
+	}
+	
+	.titletext {
+		font-family: 'cookieregular';
+		font-size:35px;
+	}
+
+	.titletextbig {
+		font-family: 'cookieregular';
+		font-size:45px;
+	}
+	
+	.przepismiddle {
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+}	
+	
+@media (max-width: 768px) {
+	.przepis .info {
+		/*left: 50%;
+		margin-left: -105px;*/
+	}
+	
+	.osoba {
+		/*padding-left:15px;
+		padding-right:15px;*/
+		margin-bottom:30px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.menum {
+		display:none!important;
+	}
+	
+	.titletext {
+		font-family: 'cookieregular';
+		font-size:35px;
+	}
+	
+	.titletextbig {
+		font-family: 'cookieregular';
+		font-size:55px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.konkurs {
+		width:80%;
+		max-width:213px;
+	}
+}

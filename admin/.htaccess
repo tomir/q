@@ -1,0 +1,13 @@
+php_value post_max_size 304857600
+php_value upload_max_filesize 304857600
+
+RewriteEngine on
+
+RewriteRule ^([a-zA-Z0-9_]+).html$ index.php?action=$1 [L]
+RewriteRule ^([a-zA-Z0-9_]+),([a-zA-Z0-9_]+).html$ index.php?action=$1&action2=$2 [L]
+RewriteRule ^([a-zA-Z0-9_]+),([a-zA-Z0-9_]+),([a-zA-Z0-9_]+).html$ index.php?action=$1&action2=$2&action3=$3 [L]
+RewriteRule ^([a-zA-Z0-9_]+),([a-zA-Z0-9_]+),([a-zA-Z0-9_]+),([a-zA-Z0-9_]+).html$ index.php?action=$1&action2=$2&action3=$3&action4=$4 [L]
+RewriteRule ^([a-zA-Z0-9_]+),([a-zA-Z0-9_]+),([a-zA-Z0-9_]+),([a-zA-Z0-9_]+).html,([0-9]+),([a-zA-Z0-9_]+)$ index.php?action=$1&action2=$2&action3=$3&action4=$4&stan=$5&result=$6 [L]
+
+RewriteRule ^,([0-9]+),([a-zA-Z0-9_]+)$ index.php?stan=$1&result=$2 [L]
+RewriteRule ^([a-zA-Z0-9_]+).html,([0-9]+),([a-zA-Z0-9_]+)$ index.php?action=$1&stan=$2&result=$3 [L]

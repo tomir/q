@@ -1,0 +1,16 @@
+{
+    "require": {
+        "slim/slim": "^3.0",
+        "zendframework/zend-db": "^2.8",
+        "slim/php-view": "^2.1",
+        "illuminate/database": "^5.2",
+        "slim/twig-view": "^2.1"
+    },
+	
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://packages.zendframework.com/"
+		}
+	]
+}

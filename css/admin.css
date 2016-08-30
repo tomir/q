@@ -1,0 +1,295 @@
+body {
+ background-color: #E9E9E9;
+ margin: 0;
+ padding: 0;
+}
+
+a img {
+ border: none;
+}
+b {color:#064568;}
+table.main {
+ background-color: #ffffff;
+ font-family:  'Arial', sans-serif;
+ color:#444444;
+ padding:10px 25px;
+}
+
+td.permission {
+ padding: 10px 0 10px 0;
+}
+
+td.permission p {
+ font-family: Arial;
+ font-size: 11px;
+ font-weight: normal;
+ color: #333333;
+ margin: 0;
+ padding: 0;
+}
+
+td.permission p a {
+ font-family: Arial;
+ font-size: 11px;
+ font-weight: normal;
+ color: #333333;
+}
+
+td.header {
+ background-color: #fff;
+ padding: 0 0 2px 0;
+}
+
+td.header h1 {
+ font-family:  'Arial', sans-serif;
+ font-size: 35px;
+ font-weight: bold;
+ color: #444444;
+ margin: 0 0 0 10px;
+ padding: 0;
+ display: inline;
+}
+
+td.sidebar ul {
+ font-family: Arial;
+ font-size: 12px;
+ font-weight: normal;
+ color: #444444;
+ margin: 10px 0 10px 24px;
+ padding: 0;
+}
+
+
+td.sidebar ul li a {
+ font-family: Arial;
+ font-size: 12px;
+ font-weight: normal;
+ color: #444444;
+ text-decoration: none;
+}
+
+td.sidebar p {
+ font-family: Arial;
+ font-size: 12px;
+ font-weight: normal;
+ color: #444444;
+ margin: 10px 0 0 0;
+ padding: 0;
+ line-height:17px;
+}
+
+td.sidebar b {
+ font-family: Arial;
+ font-size: 12px;
+ font-weight: bold;
+ color: #444444;
+ padding: 0;
+ line-height:17px;
+}
+
+td.sidebar p a {
+ font-family: Arial;
+ font-size: 12px;
+ font-weight: normal;
+ color: #444444;
+}
+
+td.mainbar h2 {
+ font-family: Georgia;
+ font-size: 18px;
+ font-weight: bold;
+ color: #ffffff;
+ margin: 0;
+ padding: 0;
+}
+
+td.mainbar h2 a {
+ font-family: Georgia;
+ font-size: 18px;
+ font-weight: bold;
+ color: #ffffff;
+ text-decoration: none;
+}
+
+td.mainbar p {
+ font-family: Arial;
+ font-size: 12px;
+ font-weight: normal;
+ color: #444444;
+ margin: 10px 0;
+ padding: 0;
+ line-height:17px;
+}
+table.transport {padding:15px 15px}
+table.transport td {
+ font-family: Arial;
+ font-size: 12px;
+ font-weight: normal;
+ color: #444444;
+ margin: 10px;
+ padding: 10px;
+ line-height:17px;
+}
+
+table.transport td table td {padding:2px }
+td.mainbar p.more {
+ padding: 0 0 10px 0;
+}
+
+td.mainbar p a {
+ font-family: Arial;
+ font-size: 12px;
+ font-weight: normal;
+ color: #444444;
+ text-decoration:none;
+}
+
+td.mainbar p.events {
+ font-family: Arial;
+ font-size: 21px;
+ font-weight: normal;
+ color: #5f5f5f;
+ text-decoration:none;
+ margin:0px;
+}
+
+a.more {
+ font-family: Arial;
+ font-size: 12px;
+ font-weight: normal;
+ color: #009ce1;
+ text-decoration:none;
+}
+
+a.top1 {
+ font-family: Arial;
+ font-size: 11px;
+ font-weight: normal;
+ color: #1e60a4;
+ text-decoration:none;
+}
+
+a.top2 {
+ font-family: Arial;
+ font-size: 11px;
+ font-weight: normal;
+ color: #444444;
+ text-decoration:none;
+}
+
+a.off {
+ font-family: Arial;
+ font-size: 13px;
+ font-weight: normal;
+ color:#E4093F;
+ text-decoration:none;
+ font-weight:600;
+}
+
+td.mainbar h2 {
+ text-align:center;
+ font-size:18px;
+ font-weight:600;
+ font-family: Arial;
+ color:#064568;
+ margin:20px 0px
+}
+
+td.mainbar ul {
+ font-family: Arial;
+ font-size: 12px;
+ font-weight: normal;
+ color: #4c4c4c;
+ margin: 10px 0 10px 0;
+ padding: 0;
+ list-style-position: inside;
+}
+
+td.footer {
+ padding: 10px 0 10px 0;
+}
+
+tr.name-row td {
+	font-size:11px;
+	font-weight:600;
+	color:#444444;
+	padding:5px 5px;
+	border-bottom:1px dashed #D9D9D9;
+}
+tr.name-row td.sum {text-align:right}
+tr.order-list td {
+	padding:10px 5px;
+	font-size:12px;
+	font-weight:200;
+	color:#444444;
+	border-bottom:1px dashed #D9D9D9;
+}
+tr.summary1-list td {
+	padding:10px 5px;
+	font-size:12px;
+	font-weight:600;
+	color:#444444;
+	border-bottom:1px dashed #D9D9D9;
+}
+tr.summary2-list td {
+	padding:10px 5px;
+	font-size:14px;
+	font-weight:600;
+	color:#444444;
+	border-bottom:1px dashed #D9D9D9;
+}
+tr.order-list td.sum {text-align:right}
+tr.order-list td.cou {text-align:center}
+tr.summary1-list td.sum {text-align:right}
+tr.summary2-list td.sum {text-align:right}
+tr.order-list td p a b {
+	font-size:16px;
+	color:#064568;
+	font-weight:600;
+}
+tr.order-list td p b {
+	font-weight:400;
+	font-size:13px;
+}
+tr.order-list td span {
+	color:#E4093F;
+	font-size:13px;
+}
+tr.order-list td p.count {
+	font-size:16px;
+	color:#064568;
+	font-weight:600;
+}
+tr.summary1-list td span {
+	color:#E4093F;
+	font-size:14px;
+}
+tr.summary2-list td span {
+	color:#E4093F;
+	font-size:18px;
+}
+
+#info { margin:auto; width:950px; color:#333333; padding:10px; background:#f4f4f4; border:1px solid #DDD; }
+
+#nicemenu { margin:0 auto; width:950px; margin-top:30px; border-bottom:dotted 1px #E5E5E5; }
+#nicemenu a { color:#104C6E; text-decoration:none; }
+#nicemenu a:hover { text-decoration:underline; }
+#nicemenu li { display:inline; position:relative; }
+#nicemenu li span { position:relative; z-index:10; padding:4px 4px 4px 6px;  border-bottom:none; line-height:18px; }
+#nicemenu li span a { font-weight:bold; padding:0 6px 0px 2px;  }
+#nicemenu li span.over { padding:4px 3px 4px 5px;  border-top:solid 1px #E5E5E5; border-left:solid 1px #E5E5E5;  border-right:solid 1px #999999; border-bottom:solid 1px #fff;  }
+*+html #nicemenu li span.over {  border-top:solid 2px #E5E5E5; padding-bottom:3px; } /* IE6 */
+#nicemenu li span.over a { }
+#nicemenu li span.over a:hover { text-decoration:none; }
+#nicemenu li span.active { padding:4px 3px 4px 5px;  border-top:solid 1px #E5E5E5; border-left:solid 1px #E5E5E5;  border-right:solid 1px #999999; border-bottom:solid 1px #fff;  }
+*+html #nicemenu li span.active {  border-top:solid 2px #E5E5E5; padding-bottom:3px; }
+#nicemenu li span.active a { }
+#nicemenu li span.active a:hover { text-decoration:none; }
+#nicemenu img.arrow { /*margin-left:4px;*/ cursor:pointer; }
+#nicemenu div.sub_menu { display:none; position:absolute; left:0; top:0px; margin-top:18px; border-top:solid 1px #E5E5E5; border-left:solid 1px #E5E5E5; border-right:solid 1px #999999; border-bottom:solid 1px #999999; padding:4px; top:2px; width:160px; background:#FFFFFF; }
+* html #nicemenu div.sub_menu { margin-top:23px; } /* IE6 */
+*+html #nicemenu div.sub_menu { margin-top:23px; } /* IE7 */
+#nicemenu div.sub_menu a:link,
+#nicemenu div.sub_menu a:visited,
+#nicemenu div.sub_menu a:hover{ display:block; font-size:11px; padding:4px;}
+#nicemenu a.item_line { border-top:solid 1px #E5E5E5; padding-top:6px !important; margin-top:3px; }

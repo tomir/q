@@ -1,0 +1,9 @@
+RewriteEngine on
+
+RewriteRule ^/$ panel.php [L]
+RewriteRule ^([a-zA-Z0-9_]+).html$ panel.php?action=$1 [L]
+RewriteRule ^([a-zA-Z0-9_]+),([a-zA-Z0-9_]+).html$ panel.php?action=$1&action2=$2 [L]
+RewriteRule ^([a-zA-Z0-9_]+),([a-zA-Z0-9_]+),([a-zA-Z0-9_]+).html$ panel.php?action=$1&action2=$2&action3=$3 [L]
+RewriteRule ^([a-zA-Z0-9_]+),([a-zA-Z0-9_]+),([a-zA-Z0-9_]+),([a-zA-Z0-9_]+).html$ panel.php?action=$1&action2=$2&action3=$3&action4=$4 [L]
+
+RewriteRule ^([a-zA-Z0-9_]+).html,([0-9]+),([a-zA-Z0-9_]+)$ panel.php?action=$1&stan=$2&result=$3 [L]

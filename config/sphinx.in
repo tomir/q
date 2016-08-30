@@ -1,0 +1,74 @@
+source zambi_source
+{
+	type			= mysql
+
+	sql_host		= localhost
+	sql_user		= root
+	sql_pass		= Sub677.1
+	sql_db			= zambi
+	sql_port		= 3306  	# optional, default is 3306
+
+	sql_query_pre  = SET NAMES utf8
+
+	sql_query				= 	SELECT p_id, p_name, p_sphinx FROM shop_product 
+	
+	#sql_query_info			=	select id from shop_product where p_id=$id
+}
+
+index zambi_index
+{
+	enable_star             = 1
+	min_infix_len 			= 2
+	min_word_len   			= 2      
+	source				 	= zambi_source
+	infix_fields			= p_id, p_name, p_sphinx
+	ignore_chars	 		= -, /, ., ', "
+	path 					= /home/administrator/www/zambi/www/sphinx/data/zambi_source_s1
+	docinfo        			= extern
+	charset_type    		= utf-8
+	#stopwords				= /usr/local/sphinx/bin/morfologia/wordform-pl-dict-urf-8
+	#wordforms				= /home/administrator/www/zambi/www/sphinx/morfologia/wordform-pl-dict-urf-8
+	#morphology				= stem_en
+	charset_table = 0..9, A..Z->a..z, a..z, \
+					U+0143->n, \
+					U+0144->n, \
+					U+0104->a, \
+					U+0105->a, \
+					U+0106->c, \
+					U+0107->c, \
+					U+0118->e, \
+					U+0119->e, \
+					U+0141->l, \
+					U+0142->l, \
+					U+00D3->o, \
+					U+00F3->o, \
+					U+015A->s, \
+					U+015B->s, \
+					U+0179->z, \
+					U+017A->z, \
+					U+017B->z, \
+					U+017C->z 
+}
+
+indexer
+{
+	mem_limit		= 512M
+}
+
+searchd
+{
+	listen				= 127.0.0.1:3312
+	listen              = 127.0.0.1:9313
+	#listen				= 9306:mysql41
+	log          		= /home/administrator/www/zambi/www/sphinx/log/searchd.log
+	query_log     		= /home/administrator/www/zambi/www/sphinx/log/query.log
+	pid_file			= /home/administrator/www/zambi/www/sphinx/log/searchd.pid
+	binlog_path = #
+	read_timeout 		= 10
+	max_children		= 0
+	max_matches			= 5000
+	seamless_rotate		= 1
+	preopen_indexes		= 1
+	unlink_old			= 1
+	workers				= threads # for RT to work
+}
