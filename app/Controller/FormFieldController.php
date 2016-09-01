@@ -9,13 +9,23 @@
 namespace App\Controller;
 
 
-class FormFieldController extends Controller {
+class FormFieldController extends Controller
+{
 
-    public function edit($request, $response) {
-
+    public function view($request, $response)
+    {
+//        $aPole = $obPanel -> getFieldDisplay($atr3);
+//        $template = 'p_editor.php';
     }
 
-    public function delete($request, $response) {
-
+    public function save($request, $response)
+    {
+//        $wynik = $obPanel -> saveField($atr3, $_POST);
     }
+
+    public function delete($request, $response)
+    {
+//        $wynik = $obPanel -> deleteField($atr3);
+    }
+
 } 
